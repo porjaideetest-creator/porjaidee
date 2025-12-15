@@ -1,0 +1,47 @@
+.footer {
+  position: absolute;
+  left: 0;
+  top: 1963.07px;
+  width: 1440px;
+}
+
+.footer-bg {
+  position: absolute;
+  background-color: #afdd47;
+  height: 111.931px;
+  left: calc(-50vw + 720px);
+  top: 0;
+  width: 100vw;
+}
+
+.footer-brand {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  height: 39px;
+  line-height: normal;
+  left: 293px;
+  font-size: 32px;
+  color: white;
+  top: 37.93px;
+  width: 150px;
+  white-space: pre-wrap;
+}
+
+.footer-link {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  left: 958px;
+  font-size: 32px;
+  color: white;
+  top: 37.93px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

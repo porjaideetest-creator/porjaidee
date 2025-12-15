@@ -1,0 +1,117 @@
+.get-involved-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+.get-involved-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 209px;
+  color: #299130;
+  font-size: 48px;
+  top: 242px;
+  margin: 0;
+}
+
+.form-container {
+  position: absolute;
+  left: 209px;
+  top: 302px;
+  width: 1022px;
+  height: 368px;
+}
+
+.contribute-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-label {
+  font-family: 'Roboto', 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.85);
+  min-width: 120px;
+  text-align: right;
+}
+
+.form-input {
+  flex: 1;
+  min-height: 30px;
+  padding: 5px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  font-family: 'Roboto', 'Outfit', sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #299130;
+}
+
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+.success-message {
+  padding: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  align-self: flex-start;
+  height: 32px;
+  padding: 5px 16px;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Roboto', 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.04);
+}
+
+.submit-button:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}

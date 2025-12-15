@@ -1,0 +1,171 @@
+.blog-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+.blog-title {
+  position: absolute;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  left: 227px;
+  color: #299130;
+  font-size: 48px;
+  top: 294px;
+  margin: 0;
+}
+
+.blog-carousel {
+  position: absolute;
+  left: 380px;
+  top: 352px;
+  width: 679px;
+  height: 319px;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(41, 145, 48, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(41, 145, 48, 1);
+}
+
+.carousel-button-prev {
+  left: 20px;
+}
+
+.carousel-button-next {
+  right: 20px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 0;
+}
+
+.carousel-indicator.active {
+  background-color: white;
+}
+
+.carousel-item {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.carousel-item:hover {
+  transform: scale(1.02);
+}
+
+.carousel-item.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.carousel-item.preview {
+  width: 56px;
+  height: 100%;
+}
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  background-color: #ece6f0;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: luminosity;
+}
+
+.carousel-content {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  mix-blend-mode: multiply;
+}
+
+.carousel-label {
+  font-family: 'Roboto', 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+.blog-description {
+  position: absolute;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  left: 543px;
+  font-size: 15px;
+  color: black;
+  top: 686px;
+  margin: 0;
+}

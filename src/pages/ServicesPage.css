@@ -1,0 +1,218 @@
+.services-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+.services-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 187px;
+  color: #299130;
+  font-size: 48px;
+  top: 346px;
+  margin: 0;
+}
+
+.services-image-container {
+  position: absolute;
+  left: 120px;
+  top: 453px;
+  width: 1200px;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+.services-image {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 350px;
+  max-width: 512px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-1,
+.image-2 {
+  width: 512px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(41, 145, 48, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(41, 145, 48, 1);
+}
+
+.carousel-button-prev {
+  left: 20px;
+}
+
+.carousel-button-next {
+  right: 20px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 0;
+}
+
+.carousel-indicator.active {
+  background-color: white;
+}
+
+.services-image-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.services-image-inner img {
+  position: absolute;
+  height: 113.14%;
+  left: -3.13%;
+  max-width: none;
+  top: -13.14%;
+  width: 103.12%;
+}
+
+.image-2 .services-image-inner img {
+  height: 114.86%;
+  left: -6.66%;
+  top: -7.43%;
+  width: 117.8%;
+}
+
+.services-cards {
+  position: absolute;
+  left: 120px;
+  top: 931px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.service-card {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  min-width: 240px;
+  flex: 1;
+  max-width: 301.333px;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(41, 145, 48, 0.05);
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%231e1e1e' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='Arial, sans-serif' font-size='18' font-weight='bold' text-anchor='middle' fill='%231e1e1e'%3Ei%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.service-title {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #1e1e1e;
+  letter-spacing: -0.48px;
+  margin: 0;
+}
+
+.service-description {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #757575;
+  margin: 0;
+}

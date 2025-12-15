@@ -1,0 +1,174 @@
+.about-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+.mission-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 202px;
+  color: #299130;
+  font-size: 48px;
+  top: 303px;
+}
+
+.mission-image-bg {
+  position: absolute;
+  background-color: #d9d9d9;
+  height: 503px;
+  left: 50%;
+  top: 416px;
+  transform: translateX(-50%);
+  width: 940px;
+}
+
+.mission-image {
+  position: absolute;
+  height: 503px;
+  left: 250px;
+  top: 416px;
+  width: 940px;
+}
+
+.mission-image-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mission-image-inner img {
+  position: absolute;
+  height: 124.65%;
+  left: -0.03%;
+  max-width: none;
+  top: -9.15%;
+  width: 100.05%;
+}
+
+.mission-text {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  left: 719.5px;
+  color: #afdd47;
+  font-size: 24px;
+  text-align: center;
+  top: 956px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.mission-text p {
+  margin: 0;
+}
+
+.team-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 202px;
+  color: #299130;
+  font-size: 48px;
+  top: 1053px;
+}
+
+.founder-label-1 {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  left: 540px;
+  color: #afdd47;
+  font-size: 24px;
+  text-align: center;
+  top: 1195px;
+  transform: translateX(-50%);
+}
+
+.founder-label-2 {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  left: 1060.5px;
+  color: #afdd47;
+  font-size: 24px;
+  text-align: center;
+  top: 1195px;
+  transform: translateX(-50%);
+}
+
+.team-photo {
+  position: absolute;
+  height: 125px;
+  border-radius: 40px;
+  width: 105px;
+  top: 1132px;
+}
+
+.photo-1 {
+  left: 787px;
+}
+
+.photo-2 {
+  left: 370px;
+}
+
+.team-photo-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 40px;
+}
+
+.team-photo-inner img {
+  position: absolute;
+  height: 354.9%;
+  max-width: none;
+  width: 635.71%;
+}
+
+.photo-1 .team-photo-inner img {
+  left: -250%;
+  top: -68.48%;
+}
+
+.photo-2 .team-photo-inner img {
+  left: -354.43%;
+  top: -81.16%;
+}
+
+.team-name {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  color: #299130;
+  font-size: 24px;
+  top: 1165px;
+}
+
+.name-1 {
+  left: 495px;
+}
+
+.name-2 {
+  left: 926px;
+}
+

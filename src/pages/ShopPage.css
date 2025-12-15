@@ -1,0 +1,190 @@
+.shop-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+.shop-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card {
+  position: absolute;
+  width: 240px;
+  background-color: #aff4c6;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 247px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #299130;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1f6d24;
+}
+
+
+.product-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.product-modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.product-modal-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #1e1e1e;
+}
+
+.modal-price {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #299130;
+  margin: 0 0 20px 0;
+}
+
+.modal-description {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #757575;
+  margin: 0 0 30px 0;
+}
+
+.modal-add-cart {
+  width: 100%;
+  padding: 12px;
+  background-color: #299130;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-add-cart:hover {
+  background-color: #1f6d24;
+}
+
+.product-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+  border-radius: 4px;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 208px;
+}
+
+.product-name {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.product-price {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.product-description {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #757575;
+  margin: 0;
+}

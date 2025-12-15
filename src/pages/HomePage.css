@@ -1,0 +1,443 @@
+.home-page {
+  position: relative;
+  background-color: white;
+  width: 1440px;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 188px;
+  color: #299130;
+  font-size: 48px;
+  top: 415px;
+  width: 450px;
+  white-space: pre-wrap;
+  margin: 0;
+  overflow: visible;
+}
+
+.hero-description {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  left: 181px;
+  color: #afdd47;
+  font-size: 20px;
+  top: 566px;
+  width: 463px;
+  margin: 0;
+}
+
+.hero-image-bg {
+  position: absolute;
+  background-color: #d9d9d9;
+  height: 319px;
+  left: 685px;
+  top: 303px;
+  width: 478px;
+}
+
+.hero-image {
+  position: absolute;
+  height: 338px;
+  left: 685px;
+  top: 303px;
+  width: 478px;
+}
+
+.hero-image-inner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-image-inner img {
+  position: absolute;
+  height: 100.08%;
+  left: -6.21%;
+  max-width: none;
+  top: -0.04%;
+  width: 106.21%;
+}
+
+/* Section Title */
+.section-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 229px;
+  color: #299130;
+  font-size: 48px;
+  top: 1049px;
+  width: 717px;
+  height: 60px;
+  margin: 0;
+}
+
+/* Project Cards */
+.project-card {
+  position: absolute;
+  overflow: visible;
+}
+
+.project-1 {
+  left: 188px;
+  top: 1126px;
+}
+
+.project-2 {
+  left: 548px;
+  top: 1126px;
+}
+
+.project-3 {
+  left: 908px;
+  top: 1126px;
+}
+
+.project-bg {
+  position: absolute;
+  background-color: #d9d9d9;
+  height: 292px;
+  width: 345px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.project-image {
+  position: absolute;
+  height: 292px;
+  width: 343px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-2 .project-image,
+.project-3 .project-image {
+  width: 345px;
+}
+
+.project-image-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 292px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-1 .project-image-inner img {
+  position: absolute;
+  height: 100.1%;
+  left: -13.58%;
+  max-width: none;
+  top: -0.05%;
+  width: 113.58%;
+}
+
+.project-2 .project-image-inner img {
+  position: absolute;
+  height: 100.23%;
+  left: -27.25%;
+  max-width: none;
+  top: -0.11%;
+  width: 127.25%;
+}
+
+.project-3 .project-image-inner img {
+  position: absolute;
+  height: 100%;
+  left: -15.2%;
+  max-width: none;
+  top: -0.18%;
+  width: 119.71%;
+}
+
+/* Service Labels */
+.service-label {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: #afdd47;
+  font-size: 20px;
+  top: 1450px;
+  margin: 0;
+  overflow: visible;
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Leaf Compost: Project 1 center is 188 + 345/2 = 360.5px, label width 126px, so left = 360.5 - 63 = 297.5px */
+.label-1 {
+  left: 297.5px;
+  width: 126px;
+}
+
+/* Organic Vegetables: Project 2 center is 548 + 345/2 = 720.5px, label width 175px, so left = 720.5 - 87.5 = 633px */
+.label-2 {
+  left: 633px;
+  width: 175px;
+}
+
+/* Learning Center: Project 3 center is 908 + 345/2 = 1080.5px, label width 145px, so left = 1080.5 - 72.5 = 1008px (correct!) */
+.label-3 {
+  left: 1008px;
+  width: 145px;
+}
+
+/* Supported By Section */
+.supported-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 188px;
+  color: #299130;
+  font-size: 32px;
+  top: 818px;
+  margin: 0;
+}
+
+.supported-bar {
+  position: absolute;
+  background-color: #299130;
+  height: 103px;
+  left: 188px;
+  top: 902px;
+  width: 1065px;
+}
+
+.sponsor-logo {
+  position: absolute;
+}
+
+.sponsor-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-1 {
+  height: 75px;
+  left: 378px;
+  top: 916px;
+  width: 217px;
+  overflow: hidden;
+}
+
+.logo-2 {
+  left: 641px;
+  border-radius: 41px;
+  width: 88px;
+  height: 88px;
+  top: 910px;
+  overflow: hidden;
+}
+
+.logo-2 img {
+  border-radius: 41px;
+}
+
+.logo-3 {
+  left: 764px;
+  border-radius: 51.5px;
+  width: 79px;
+  height: 79px;
+  top: 916px;
+  overflow: hidden;
+}
+
+.logo-3 img {
+  border-radius: 51.5px;
+}
+
+.logo-4 {
+  height: 75px;
+  left: 890px;
+  top: 916px;
+  width: 172px;
+  overflow: hidden;
+}
+
+/* About Button */
+.about-button-link {
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  left: 1026px;
+  top: 731px;
+  width: 227px;
+  height: 87px;
+  z-index: 10;
+}
+
+.about-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-button-bg {
+  position: absolute;
+  background-color: #299130;
+  height: 87px;
+  left: 0;
+  border-radius: 80px;
+  top: 0;
+  width: 227px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-button-bg:hover {
+  background-color: #1f6f24;
+}
+
+.about-button-text {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 32px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* CTA Section */
+.cta-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 229px;
+  color: #299130;
+  font-size: 48px;
+  top: 1555px;
+  margin: 0;
+}
+
+/* Blog Button */
+.blog-button-link {
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  left: 920px;
+  top: 1541px;
+  width: 321px;
+  height: 87px;
+  z-index: 10;
+}
+
+.blog-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-button-bg {
+  position: absolute;
+  background-color: #299130;
+  height: 87px;
+  left: 0;
+  border-radius: 75px;
+  top: 0;
+  width: 321px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blog-button-bg:hover {
+  background-color: #1f6f24;
+}
+
+.blog-button-text {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 32px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Homepage Footer - positioned at bottom and spans full width */
+.home-page .footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1650px;
+  width: 100vw;
+  max-width: none;
+}
+
+.home-page .footer-bg {
+  position: absolute;
+  background-color: #afdd47;
+  height: 111.931px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+}
+
+.home-page .footer-brand {
+  position: absolute;
+  left: calc(50vw - 720px + 293px);
+  z-index: 1;
+}
+
+.home-page .footer-link {
+  position: absolute;
+  left: calc(50vw - 720px + 958px);
+  z-index: 1;
+}
