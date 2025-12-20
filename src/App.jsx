@@ -13,7 +13,8 @@ import CartPage from './pages/CartPage';
 
 function App() {
   // Get the base path from vite.config.js (should match the base in vite.config.js)
-  const basePath = import.meta.env.BASE_URL || '/porjaidee/';
+  // For GitHub Pages: /porjaidee/, For Vercel: /
+  const basePath = import.meta.env.BASE_URL || '/';
 
   return (
     <CartProvider>
