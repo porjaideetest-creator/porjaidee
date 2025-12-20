@@ -2,9 +2,11 @@
   position: relative;
   background-color: white;
   width: 1440px;
-  min-height: 100vh;
+  min-height: calc(100vh / var(--scale-factor));
   font-family: 'Outfit', sans-serif;
   margin: 0 auto;
+  transform: scale(var(--scale-factor));
+  transform-origin: top center;
 }
 
 .blog-title {

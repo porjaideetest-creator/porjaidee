@@ -9,9 +9,11 @@
   position: absolute;
   background-color: #afdd47;
   height: 111.931px;
-  left: calc(-50vw + 720px);
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
   width: 100vw;
+  min-width: 1440px;
 }
 
 .footer-brand {

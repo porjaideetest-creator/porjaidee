@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+:root {
+  --base-width: 1440px;
+  --scale-factor: min(100vw / var(--base-width), 1);
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --scale-factor: 100vw / var(--base-width);
+}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +21,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 body {
@@ -26,6 +37,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: visible;
 }

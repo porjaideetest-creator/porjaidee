@@ -2,9 +2,11 @@
   position: relative;
   background-color: white;
   width: 1440px;
-  min-height: 100vh;
+  min-height: calc(100vh / var(--scale-factor));
   font-family: 'Outfit', sans-serif;
   margin: 0 auto;
+  transform: scale(var(--scale-factor));
+  transform-origin: top center;
 }
 
 /* Hero Section */
@@ -412,11 +414,9 @@
 /* Homepage Footer - positioned at bottom and spans full width */
 .home-page .footer {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   top: 1650px;
-  width: 100vw;
-  max-width: none;
+  width: 1440px;
 }
 
 .home-page .footer-bg {
@@ -427,17 +427,18 @@
   transform: translateX(-50%);
   top: 0;
   width: 100vw;
+  min-width: 1440px;
   z-index: 0;
 }
 
 .home-page .footer-brand {
   position: absolute;
-  left: calc(50vw - 720px + 293px);
+  left: 293px;
   z-index: 1;
 }
 
 .home-page .footer-link {
   position: absolute;
-  left: calc(50vw - 720px + 958px);
+  left: 958px;
   z-index: 1;
 }

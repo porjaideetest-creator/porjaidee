@@ -12,9 +12,12 @@ import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 
 function App() {
+  // Get the base path from vite.config.js (should match the base in vite.config.js)
+  const basePath = import.meta.env.BASE_URL || '/porjaidee/';
+
   return (
     <CartProvider>
-      <Router>
+      <Router basename={basePath}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
