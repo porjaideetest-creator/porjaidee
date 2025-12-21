@@ -74,6 +74,105 @@
   margin: 0;
 }
 
+.about-description {
+  position: absolute;
+  left: 202px;
+  top: 1020px;
+  width: 1036px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  font-size: 18px;
+}
+
+.about-description p {
+  margin: 0 0 20px 0;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+.core-value-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 202px;
+  color: #299130;
+  font-size: 36px;
+  top: 1280px;
+  margin: 0;
+}
+
+.core-values {
+  position: absolute;
+  left: 202px;
+  top: 1340px;
+  width: 1036px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.core-value-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.core-value-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #299130;
+  margin: 0;
+}
+
+.core-value-description {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.partners-title {
+  position: absolute;
+  text-transform: capitalize;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  left: 202px;
+  color: #299130;
+  font-size: 36px;
+  top: 1780px;
+  margin: 0;
+}
+
+.partners-content {
+  position: absolute;
+  left: 202px;
+  top: 1840px;
+  width: 1036px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  font-size: 18px;
+}
+
+.partners-content p {
+  margin: 0 0 20px 0;
+}
+
+.partners-content p:last-child {
+  margin-bottom: 0;
+}
+
 .team-title {
   position: absolute;
   text-transform: capitalize;
@@ -83,7 +182,7 @@
   left: 202px;
   color: #299130;
   font-size: 48px;
-  top: 1053px;
+  top: 2130px;
 }
 
 .founder-label-1 {
@@ -96,7 +195,7 @@
   color: #afdd47;
   font-size: 24px;
   text-align: center;
-  top: 1195px;
+  top: 2272px;
   transform: translateX(-50%);
 }
 
@@ -110,7 +209,7 @@
   color: #afdd47;
   font-size: 24px;
   text-align: center;
-  top: 1195px;
+  top: 2272px;
   transform: translateX(-50%);
 }
 
@@ -119,7 +218,7 @@
   height: 125px;
   border-radius: 40px;
   width: 105px;
-  top: 1132px;
+  top: 2209px;
 }
 
 .photo-1 {
@@ -163,7 +262,7 @@
   line-height: normal;
   color: #299130;
   font-size: 24px;
-  top: 1165px;
+  top: 2242px;
 }
 
 .name-1 {
@@ -172,5 +271,10 @@
 
 .name-2 {
   left: 926px;
+}
+
+/* Footer positioning for About page only */
+.about-page .footer {
+  top: 2350px;
 }
 

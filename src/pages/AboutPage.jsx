@@ -26,6 +26,39 @@ export default function AboutPage() {
         <p>Por Jai Dee is a living example of a Low-Carbon farm that truly works.</p>
       </div>
       
+      <div className="about-description">
+        <p>Por Jai Dee Co., Ltd. is a social enterprise founded in 2024 in Chiang Mai, Thailand, dedicated to building a more sustainable and resilient agricultural future. Our work is guided by a Low-Carbon Farming Model that responds directly to environmental challenges while strengthening local livelihoods. At the heart of everything we do is the belief that agriculture can protect the environment, support communities, and create shared value.</p>
+        <p>Our mission focuses on three interconnected goals: reducing open burning to combat PM2.5 air pollution, restoring soil health and long-term fertility, and improving livelihoods by creating stable income opportunities for local farmers and communities. We see environmental protection and economic well-being not as separate goals, but as outcomes that grow stronger when pursued together.</p>
+      </div>
+      
+      <p className="core-value-title">Core value</p>
+      
+      <div className="core-values">
+        <div className="core-value-item">
+          <p className="core-value-name">No Burning, Less Pollution</p>
+          <p className="core-value-description">Every leaf has value, and responsible management helps protect our air and environment.</p>
+        </div>
+        <div className="core-value-item">
+          <p className="core-value-name">Safety & Care</p>
+          <p className="core-value-description">Every crop is grown with responsibility for consumer health and long-term sustainability.</p>
+        </div>
+        <div className="core-value-item">
+          <p className="core-value-name">Sharing with the Community</p>
+          <p className="core-value-description">Revenue and opportunities are reinvested into local farmers and community partners.</p>
+        </div>
+        <div className="core-value-item">
+          <p className="core-value-name">Learning Together</p>
+          <p className="core-value-description">Lasting change begins with hands-on action, shared knowledge, and collective growth.</p>
+        </div>
+      </div>
+      
+      <p className="partners-title">Government & Network Partners</p>
+      
+      <div className="partners-content">
+        <p>We maintain long-term partnerships with local farmer groups, schools, and organic markets. We collaborate with municipalities, NGOs, and schools on leaf collection, composting, and education programs. We also serve as a coordination hub for the Federation of Organic Agriculture of Thailand in Mae Rim District.</p>
+        <p>Our work has received recognition across sectors, including visits from inspectors of the Ministry of Interior to the "Leaves for Cash" project in February 2025, participation by Nirun Phongsitthithorn, Governor of Chiang Mai, in our "Green Day" campaign and leaf-buying program, and study visits by executives from the Bank for Agriculture and Agricultural Cooperatives to learn from our project model.</p>
+      </div>
+      
       <p className="team-title" data-node-id="25:258">
         Meet The Team
       </p>
