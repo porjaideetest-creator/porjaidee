@@ -3,9 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './ContactPage.css';
 
-const img17541268953761 = "https://www.figma.com/api/mcp/asset/3e2ac905-6e7b-4d90-9de3-19ad7354a143";
-const imgChevronUp = "https://www.figma.com/api/mcp/asset/d0cc2a88-cba5-4b91-ab24-c3b38985d152";
-const imgChevronDown = "https://www.figma.com/api/mcp/asset/58640af0-2c4d-490a-9400-c21f08b6ae8d";
+// Image assets - using local paths from /public/images
 
 export default function ContactPage() {
   const [openAccordion, setOpenAccordion] = useState(0);
@@ -77,7 +75,7 @@ export default function ContactPage() {
               <div className="accordion-icon">
                 <img 
                   alt="" 
-                  src={openAccordion === index ? imgChevronUp : imgChevronDown} 
+                  src={openAccordion === index ? "/images/chevron-up.svg" : "/images/chevron-down.svg"} 
                 />
               </div>
             </div>
@@ -163,7 +161,7 @@ export default function ContactPage() {
       </div>
 
       <div className="contact-image" data-name="1754126895376 1" data-node-id="110:1172">
-        <img alt="" src={img17541268953761} />
+        <img alt="" src="/images/contact-image.jpg" />
       </div>
 
       <Footer />

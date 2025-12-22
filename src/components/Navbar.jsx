@@ -2,8 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../contexts/CartContext';
 import './Navbar.css';
 
-const imgImg47851 = "https://www.figma.com/api/mcp/asset/95d140e2-d1b3-4856-848c-25e6caf2ab18";
-
 export default function Navbar() {
   const location = useLocation();
   const { getTotalItems } = useCart();
@@ -15,7 +13,7 @@ export default function Navbar() {
     <div className="navbar" data-name="Navbar" data-node-id="8:9">
       <div className="navbar-logo" data-name="IMG_4785 1" data-node-id="6:5">
         <Link to="/">
-          <img alt="" src={imgImg47851} />
+          <img alt="" src="/images/logo.png" />
         </Link>
       </div>
       <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} style={{ left: '281px' }} data-node-id="8:3">

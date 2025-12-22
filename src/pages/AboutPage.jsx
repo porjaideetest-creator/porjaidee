@@ -2,8 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './AboutPage.css';
 
-const img4665999181221937372822431625164657571554732780N1 = "https://www.figma.com/api/mcp/asset/3c8f61bc-39ed-456f-ae68-fc342f3ef665";
-const img506613215122248739240243162596900854839290210N2 = "https://www.figma.com/api/mcp/asset/e224f2dc-2d32-4cec-b12b-82bd66ebc406";
+// Image assets - using local paths from /public/images
 
 export default function AboutPage() {
   return (
@@ -17,7 +16,7 @@ export default function AboutPage() {
       <div className="mission-image-bg" data-node-id="97:1081" />
       <div className="mission-image" data-name="466599918_122193737282243162_5164657571554732780_n 1" data-node-id="110:1098">
         <div className="mission-image-inner">
-          <img alt="" src={img4665999181221937372822431625164657571554732780N1} />
+          <img alt="" src="/images/mission-image.jpg" />
         </div>
       </div>
       
@@ -69,13 +68,13 @@ export default function AboutPage() {
       
       <div className="team-photo photo-1" data-name="506613215_122248739240243162_596900854839290210_n 2" data-node-id="110:1101">
         <div className="team-photo-inner">
-          <img alt="" src={img506613215122248739240243162596900854839290210N2} />
+          <img alt="" src="/images/team-photo.jpg" />
         </div>
       </div>
       
       <div className="team-photo photo-2" data-name="506613215_122248739240243162_596900854839290210_n 3" data-node-id="110:1102">
         <div className="team-photo-inner">
-          <img alt="" src={img506613215122248739240243162596900854839290210N2} />
+          <img alt="" src="/images/team-photo.jpg" />
         </div>
       </div>
       

@@ -3,13 +3,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './BlogPage.css';
 
-const imgItem1 = "https://www.figma.com/api/mcp/asset/e41e83cf-d23b-4561-b188-e0b59a698a65";
-
+// Image assets - using local paths from /public/images
 const blogPosts = [
-  { id: 1, image: imgItem1, label: 'Sustainable Farming Practices', description: 'Learn about our innovative approaches to sustainable agriculture and environmental conservation.' },
-  { id: 2, image: imgItem1, label: 'Community Impact Stories', description: 'Discover how our programs are making a difference in local communities.' },
-  { id: 3, image: imgItem1, label: 'Workshop Highlights', description: 'Recap of our recent workshops and educational events.' },
-  { id: 4, image: imgItem1, label: 'Seasonal Updates', description: 'Latest news and updates from the farm throughout the seasons.' },
+  { id: 1, image: "/images/blog-item.jpg", label: 'Sustainable Farming Practices', description: 'Learn about our innovative approaches to sustainable agriculture and environmental conservation.' },
+  { id: 2, image: "/images/blog-item.jpg", label: 'Community Impact Stories', description: 'Discover how our programs are making a difference in local communities.' },
+  { id: 3, image: "/images/blog-item.jpg", label: 'Workshop Highlights', description: 'Recap of our recent workshops and educational events.' },
+  { id: 4, image: "/images/blog-item.jpg", label: 'Seasonal Updates', description: 'Latest news and updates from the farm throughout the seasons.' },
 ];
 
 export default function BlogPage() {

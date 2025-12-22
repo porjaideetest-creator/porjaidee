@@ -3,20 +3,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './ServicesPage.css';
 
-// Image assets from Figma
-const imgImg47851 = "https://www.figma.com/api/mcp/asset/b8cda57d-6ae2-4139-9fa8-1c340550a853";
-const img4667414751221939529162431628461739260359411220N1 = "https://www.figma.com/api/mcp/asset/f1fe8c60-991c-43bd-a0f8-34ba6a2b3a48";
-const imgLineAlbumFamilyFarmDay250610831 = "https://www.figma.com/api/mcp/asset/8eada345-80aa-4a1a-9c75-df2d8ecd4b96";
-
+// Image assets - using local paths from /public/images
 const images = [
   {
-    src: img4667414751221939529162431628461739260359411220N1,
+    src: "/images/services-1.jpg",
     name: "466741475_122193952916243162_8461739260359411220_n 1",
     nodeId: "110:1164",
     isFirst: true
   },
   {
-    src: imgLineAlbumFamilyFarmDay250610831,
+    src: "/images/services-2.jpg",
     name: "LINE_ALBUM_Family Farm Day_250610_83 1",
     nodeId: "110:1165",
     isFirst: false

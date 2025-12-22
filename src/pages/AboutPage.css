@@ -103,14 +103,14 @@
   left: 202px;
   color: #299130;
   font-size: 36px;
-  top: 1280px;
+  top: 1290px;
   margin: 0;
 }
 
 .core-values {
   position: absolute;
   left: 202px;
-  top: 1340px;
+  top: 1370px;
   width: 1036px;
   display: flex;
   flex-direction: column;
@@ -149,14 +149,14 @@
   left: 202px;
   color: #299130;
   font-size: 36px;
-  top: 1780px;
+  top: 1770px;
   margin: 0;
 }
 
 .partners-content {
   position: absolute;
   left: 202px;
-  top: 1840px;
+  top: 1850px;
   width: 1036px;
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
@@ -182,7 +182,7 @@
   left: 202px;
   color: #299130;
   font-size: 48px;
-  top: 2130px;
+  top: 2170px;
 }
 
 .founder-label-1 {
@@ -195,7 +195,7 @@
   color: #afdd47;
   font-size: 24px;
   text-align: center;
-  top: 2272px;
+  top: 2312px;
   transform: translateX(-50%);
 }
 
@@ -209,7 +209,7 @@
   color: #afdd47;
   font-size: 24px;
   text-align: center;
-  top: 2272px;
+  top: 2312px;
   transform: translateX(-50%);
 }
 
@@ -218,7 +218,7 @@
   height: 125px;
   border-radius: 40px;
   width: 105px;
-  top: 2209px;
+  top: 2249px;
 }
 
 .photo-1 {
@@ -262,7 +262,7 @@
   line-height: normal;
   color: #299130;
   font-size: 24px;
-  top: 2242px;
+  top: 2282px;
 }
 
 .name-1 {
@@ -275,6 +275,6 @@
 
 /* Footer positioning for About page only */
 .about-page .footer {
-  top: 2350px;
+  top: 2390px;
 }
 
