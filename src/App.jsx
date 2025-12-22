@@ -32,6 +32,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
+        <Analytics />
       </Router>
       <Analytics />
     </CartProvider>
