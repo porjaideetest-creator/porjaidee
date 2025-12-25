@@ -8,7 +8,6 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import GetInvolvedPage from './pages/GetInvolvedPage';
 import ImpactPage from './pages/ImpactPage';
 import ShopPage from './pages/ShopPage';
-import SupportPage from './pages/SupportPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
@@ -29,7 +28,6 @@ function App() {
           <Route path="/get-involved" element={<GetInvolvedPage />} />
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/support" element={<SupportPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/cart" element={<CartPage />} />

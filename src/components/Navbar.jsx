@@ -31,9 +31,6 @@ export default function Navbar() {
       <Link to="/shop" className={`nav-link ${isActive('/shop') ? 'active' : ''}`} style={{ left: '894px' }} data-node-id="8:6">
         Shop
       </Link>
-      <Link to="/support" className={`nav-link ${isActive('/support') ? 'active' : ''}`} style={{ left: '1001px' }} data-node-id="8:8">
-        Support Us
-      </Link>
       {cartItemCount > 0 && (
         <Link to="/cart" className="cart-button-link">
           <div className="cart-button">
