@@ -3,6 +3,7 @@
   left: 0;
   top: 1963.07px;
   width: 1440px;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 .footer-bg {
@@ -42,8 +43,10 @@
   color: white;
   top: 37.93px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .footer-link:hover {
   text-decoration: underline;
+  transform: translateY(-2px);
 }

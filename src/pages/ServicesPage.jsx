@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './ServicesPage.css';
@@ -16,6 +17,29 @@ const images = [
     name: "LINE_ALBUM_Family Farm Day_250610_83 1",
     nodeId: "110:1165",
     isFirst: false
+  }
+];
+
+const services = [
+  {
+    id: 'workshops-study-tours',
+    title: 'Workshops & Study Tours',
+    description: 'School trips, kids\' camps, and family workshops'
+  },
+  {
+    id: 'leaf-compost-starter-kits',
+    title: 'Leaf Compost & Starter Kits',
+    description: 'Supplying compost and easy starter kits for home gardening'
+  },
+  {
+    id: 'organic-vegetable-supply',
+    title: 'Organic Vegetable Supply',
+    description: 'Supplying fresh organic vegetables to restaurants and families'
+  },
+  {
+    id: 'community-consulting',
+    title: 'Community Consulting',
+    description: 'Consulting on Low-Carbon models for communities and organizations'
   }
 ];
 
@@ -79,38 +103,25 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      <p className="services-subtitle">Click on any service below to learn more</p>
+
       <div className="services-cards">
-        <div className="service-card" data-node-id="I34:4338;2143:14363">
-          <div className="service-icon" />
-          <div className="service-body">
-            <p className="service-title">Workshops & Study Tours</p>
-            <p className="service-description">School trips, kids' camps, and family workshops</p>
-          </div>
-        </div>
-
-        <div className="service-card" data-node-id="I34:4338;2143:14364">
-          <div className="service-icon" />
-          <div className="service-body">
-            <p className="service-title">Leaf Compost & Starter Kits</p>
-            <p className="service-description">Supplying compost and easy starter kits for home gardening</p>
-          </div>
-        </div>
-
-        <div className="service-card" data-node-id="I34:4338;2143:14365">
-          <div className="service-icon" />
-          <div className="service-body">
-            <p className="service-title">Community Consulting</p>
-            <p className="service-description">Consulting on Low-Carbon models for communities and organizations</p>
-          </div>
-        </div>
-
-        <div className="service-card" data-node-id="I34:4338;2143:14366">
-          <div className="service-icon" />
-          <div className="service-body">
-            <p className="service-title">Organic Vegetable Supply</p>
-            <p className="service-description">Supplying fresh organic vegetables to restaurants and families</p>
-          </div>
-        </div>
+        {services.map((service) => (
+          <Link 
+            key={service.id}
+            to={`/services/${service.id}`}
+            className="service-card-link"
+          >
+            <div className="service-card" data-node-id="I34:4338;2143:14363">
+              <div className="service-icon" />
+              <div className="service-body">
+                <p className="service-title">{service.title}</p>
+                <p className="service-description">{service.description}</p>
+                <p className="service-learn-more">Click to see more →</p>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
 
       <Footer />

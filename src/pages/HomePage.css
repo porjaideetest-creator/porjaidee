@@ -7,6 +7,7 @@
   margin: 0 auto;
   transform: scale(var(--scale-factor));
   transform-origin: top center;
+  animation: fadeIn 0.6s ease-out;
 }
 
 /* Hero Section */
@@ -24,6 +25,7 @@
   white-space: pre-wrap;
   margin: 0;
   overflow: visible;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .hero-description {
@@ -38,6 +40,7 @@
   top: 566px;
   width: 463px;
   margin: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .hero-image-bg {
@@ -55,6 +58,12 @@
   left: 685px;
   top: 303px;
   width: 478px;
+  animation: slideInRight 1s ease-out 0.3s both;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
 }
 
 .hero-image-inner {
@@ -80,34 +89,44 @@
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
   line-height: normal;
-  left: 229px;
+  left: 188px;
   color: #299130;
   font-size: 48px;
   top: 1049px;
   width: 717px;
   height: 60px;
   margin: 0;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 /* Project Cards */
 .project-card {
   position: absolute;
   overflow: visible;
+  transition: transform 0.3s ease;
+  animation: scaleIn 0.8s ease-out both;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-1 {
   left: 188px;
   top: 1126px;
+  animation-delay: 0.8s;
 }
 
 .project-2 {
   left: 548px;
   top: 1126px;
+  animation-delay: 1s;
 }
 
 .project-3 {
   left: 908px;
   top: 1126px;
+  animation-delay: 1.2s;
 }
 
 .project-bg {
@@ -224,6 +243,7 @@
   font-size: 32px;
   top: 818px;
   margin: 0;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 
 .supported-bar {
@@ -237,6 +257,28 @@
 
 .sponsor-logo {
   position: absolute;
+  animation: fadeIn 0.6s ease-out both;
+  transition: transform 0.3s ease;
+}
+
+.logo-1 {
+  animation-delay: 0.7s;
+}
+
+.logo-2 {
+  animation-delay: 0.8s;
+}
+
+.logo-3 {
+  animation-delay: 0.9s;
+}
+
+.logo-4 {
+  animation-delay: 1s;
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1);
 }
 
 .sponsor-logo img {
@@ -322,11 +364,13 @@
   top: 0;
   width: 227px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  animation: scaleIn 0.6s ease-out 0.5s both;
 }
 
 .about-button-bg:hover {
   background-color: #1f6f24;
+  transform: scale(1.05);
 }
 
 .about-button-text {
@@ -387,11 +431,13 @@
   top: 0;
   width: 321px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  animation: scaleIn 0.6s ease-out 1.4s both;
 }
 
 .blog-button-bg:hover {
   background-color: #1f6f24;
+  transform: scale(1.05);
 }
 
 .blog-button-text {

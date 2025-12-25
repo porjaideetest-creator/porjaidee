@@ -4,6 +4,7 @@ import { CartProvider } from './contexts/CartContext';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 import GetInvolvedPage from './pages/GetInvolvedPage';
 import ImpactPage from './pages/ImpactPage';
 import ShopPage from './pages/ShopPage';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:serviceId" element={<ServiceDetailPage />} />
           <Route path="/get-involved" element={<GetInvolvedPage />} />
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/shop" element={<ShopPage />} />

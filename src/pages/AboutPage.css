@@ -7,6 +7,7 @@
   margin: 0 auto;
   transform: scale(var(--scale-factor));
   transform-origin: top center;
+  animation: fadeIn 0.6s ease-out;
 }
 
 .mission-title {
@@ -19,6 +20,7 @@
   color: #299130;
   font-size: 48px;
   top: 303px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .mission-image-bg {
@@ -37,6 +39,12 @@
   left: 250px;
   top: 416px;
   width: 940px;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+  transition: transform 0.3s ease;
+}
+
+.mission-image:hover {
+  transform: scale(1.02);
 }
 
 .mission-image-inner {
@@ -61,13 +69,14 @@
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
   line-height: normal;
-  left: 719.5px;
+  left: 50%;
   color: #afdd47;
   font-size: 24px;
   text-align: center;
   top: 956px;
   transform: translateX(-50%);
   white-space: nowrap;
+  animation: fadeInUpCentered 0.8s ease-out 0.6s both;
 }
 
 .mission-text p {
@@ -84,6 +93,7 @@
   line-height: 1.6;
   color: #333;
   font-size: 18px;
+  animation: fadeInUp 0.8s ease-out 0.8s both;
 }
 
 .about-description p {
@@ -105,6 +115,7 @@
   font-size: 36px;
   top: 1290px;
   margin: 0;
+  animation: fadeInUp 0.8s ease-out 1s both;
 }
 
 .core-values {
@@ -121,6 +132,29 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  animation: slideInLeft 0.6s ease-out both;
+  opacity: 0;
+  transition: transform 0.3s ease;
+}
+
+.core-value-item:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.core-value-item:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.core-value-item:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.core-value-item:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.core-value-item:hover {
+  transform: translateX(5px);
 }
 
 .core-value-name {
@@ -151,6 +185,7 @@
   font-size: 36px;
   top: 1770px;
   margin: 0;
+  animation: fadeInUp 0.8s ease-out 2s both;
 }
 
 .partners-content {
@@ -163,6 +198,7 @@
   line-height: 1.6;
   color: #333;
   font-size: 18px;
+  animation: fadeInUp 0.8s ease-out 2.2s both;
 }
 
 .partners-content p {
@@ -175,6 +211,7 @@
 
 .team-title {
   position: absolute;
+  animation: fadeInUp 0.8s ease-out 2.4s both;
   text-transform: capitalize;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
@@ -219,6 +256,20 @@
   border-radius: 40px;
   width: 105px;
   top: 2249px;
+  animation: scaleIn 0.6s ease-out both;
+  transition: transform 0.3s ease;
+}
+
+.photo-1 {
+  animation-delay: 2.6s;
+}
+
+.photo-2 {
+  animation-delay: 2.8s;
+}
+
+.team-photo:hover {
+  transform: scale(1.1);
 }
 
 .photo-1 {
@@ -263,6 +314,15 @@
   color: #299130;
   font-size: 24px;
   top: 2282px;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.name-1 {
+  animation-delay: 3s;
+}
+
+.name-2 {
+  animation-delay: 3.2s;
 }
 
 .name-1 {
@@ -276,5 +336,16 @@
 /* Footer positioning for About page only */
 .about-page .footer {
   top: 2390px;
+}
+
+@keyframes fadeInUpCentered {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
