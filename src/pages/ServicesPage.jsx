@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useLanguage } from '../contexts/LanguageContext';
 import './ServicesPage.css';
 
 // Image assets - using local paths from /public/images
@@ -20,31 +21,71 @@ const images = [
   }
 ];
 
-const services = [
-  {
-    id: 'workshops-study-tours',
-    title: 'Workshops & Study Tours',
-    description: 'School trips, kids\' camps, and family workshops'
+const servicesData = {
+  en: [
+    {
+      id: 'workshops-study-tours',
+      title: 'Workshops & Study Tours',
+      description: 'School trips, kids\' camps, and family workshops'
+    },
+    {
+      id: 'leaf-compost-starter-kits',
+      title: 'Leaf Compost & Starter Kits',
+      description: 'Supplying compost and easy starter kits for home gardening'
+    },
+    {
+      id: 'organic-vegetable-supply',
+      title: 'Organic Vegetable Supply',
+      description: 'Supplying fresh organic vegetables to restaurants and families'
+    },
+    {
+      id: 'community-consulting',
+      title: 'Community Consulting',
+      description: 'Consulting on low-carbon models for communities and organizations'
+    }
+  ],
+  th: [
+    {
+      id: 'workshops-study-tours',
+      title: 'เวิร์กช็อปและศึกษาดูงาน',
+      description: 'ทัศนศึกษาสำหรับโรงเรียน ค่ายเด็ก และเวิร์กช็อปสำหรับครอบครัว'
+    },
+    {
+      id: 'leaf-compost-starter-kits',
+      title: 'ปุ๋ยใบไม้และชุดเริ่มต้นการปลูกผัก',
+      description: 'จัดจำหน่ายปุ๋ยอินทรีย์และชุดเริ่มต้นสำหรับการปลูกผักที่บ้าน'
+    },
+    {
+      id: 'organic-vegetable-supply',
+      title: 'การจัดจำหน่ายผักอินทรีย์สด',
+      description: 'จัดจำหน่ายผักอินทรีย์สดให้กับร้านอาหารและครัวเรือน'
+    },
+    {
+      id: 'community-consulting',
+      title: 'ที่ปรึกษาด้านการพัฒนาชุมชน',
+      description: 'ให้คำปรึกษาด้านโมเดลคาร์บอนต่ำสำหรับชุมชนและองค์กร'
+    }
+  ]
+};
+
+const translations = {
+  en: {
+    title: 'What We Offer',
+    subtitle: 'Click on any service below to learn more',
+    learnMore: 'Click to see more →'
   },
-  {
-    id: 'leaf-compost-starter-kits',
-    title: 'Leaf Compost & Starter Kits',
-    description: 'Supplying compost and easy starter kits for home gardening'
-  },
-  {
-    id: 'organic-vegetable-supply',
-    title: 'Organic Vegetable Supply',
-    description: 'Supplying fresh organic vegetables to restaurants and families'
-  },
-  {
-    id: 'community-consulting',
-    title: 'Community Consulting',
-    description: 'Consulting on Low-Carbon models for communities and organizations'
+  th: {
+    title: 'สิ่งที่เรานำเสนอ',
+    subtitle: 'คลิกที่บริการด้านล่างเพื่อเรียนรู้เพิ่มเติม',
+    learnMore: 'คลิกเพื่อดูเพิ่มเติม →'
   }
-];
+};
 
 export default function ServicesPage() {
+  const { language } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const services = servicesData[language];
+  const t = translations[language];
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -59,7 +100,7 @@ export default function ServicesPage() {
       <Navbar />
       
       <p className="services-title" data-node-id="34:4993">
-        What we offer
+        {t.title}
       </p>
 
       <div className="services-image-container">
@@ -103,7 +144,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      <p className="services-subtitle">Click on any service below to learn more</p>
+      <p className="services-subtitle">{t.subtitle}</p>
 
       <div className="services-cards">
         {services.map((service) => (
@@ -117,7 +158,7 @@ export default function ServicesPage() {
               <div className="service-body">
                 <p className="service-title">{service.title}</p>
                 <p className="service-description">{service.description}</p>
-                <p className="service-learn-more">Click to see more →</p>
+                <p className="service-learn-more">{t.learnMore}</p>
               </div>
             </div>
           </Link>

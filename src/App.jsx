@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { CartProvider } from './contexts/CartContext';
+import { LanguageProvider } from './contexts/LanguageContext';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
@@ -18,8 +19,9 @@ function App() {
   const basePath = import.meta.env.BASE_URL || '/';
 
   return (
-    <CartProvider>
-      <Router basename={basePath}>
+    <LanguageProvider>
+      <CartProvider>
+        <Router basename={basePath}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -32,9 +34,10 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
-      </Router>
-      <Analytics />
-    </CartProvider>
+        </Router>
+        <Analytics />
+      </CartProvider>
+    </LanguageProvider>
   );
 }
 
