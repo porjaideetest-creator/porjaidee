@@ -3,11 +3,31 @@ import { useCart } from '../contexts/CartContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import './Navbar.css';
 
+const translations = {
+  en: {
+    aboutUs: 'About Us',
+    services: 'Services',
+    getInvolved: 'Get Involved',
+    ourImpact: 'Our Impact',
+    shop: 'Shop',
+    cart: 'Cart'
+  },
+  th: {
+    aboutUs: 'เกี่ยวกับเรา',
+    services: 'บริการของเรา',
+    getInvolved: 'ร่วมเป็นส่วนหนึ่ง',
+    ourImpact: 'ผลกระทบของเรา',
+    shop: 'ร้านค้า',
+    cart: 'ตะกร้า'
+  }
+};
+
 export default function Navbar() {
   const location = useLocation();
   const { getTotalItems } = useCart();
   const cartItemCount = getTotalItems();
   const { language, toggleLanguage } = useLanguage();
+  const t = translations[language];
   
   const isActive = (path) => location.pathname === path;
   
@@ -20,19 +40,19 @@ export default function Navbar() {
           </Link>
         </div>
         <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} style={{ left: '281px' }} data-node-id="8:3">
-          About Us
+          {t.aboutUs}
         </Link>
         <Link to="/services" className={`nav-link ${isActive('/services') ? 'active' : ''}`} style={{ left: '423px' }} data-node-id="8:4">
-          Services
+          {t.services}
         </Link>
         <Link to="/get-involved" className={`nav-link ${isActive('/get-involved') ? 'active' : ''}`} style={{ left: '558px' }} data-node-id="8:5">
-          Get Involved
+          {t.getInvolved}
         </Link>
         <Link to="/impact" className={`nav-link ${isActive('/impact') ? 'active' : ''}`} style={{ left: '731px' }} data-node-id="8:44">
-          Our Impact
+          {t.ourImpact}
         </Link>
         <Link to="/shop" className={`nav-link ${isActive('/shop') ? 'active' : ''}`} style={{ left: '894px' }} data-node-id="8:6">
-          Shop
+          {t.shop}
         </Link>
       </div>
       <button 
@@ -55,7 +75,7 @@ export default function Navbar() {
       {cartItemCount > 0 && (
         <Link to="/cart" className="cart-button-link">
           <div className="cart-button">
-            Cart ({cartItemCount})
+            {t.cart} ({cartItemCount})
           </div>
         </Link>
       )}

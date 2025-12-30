@@ -1,23 +1,58 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 import './HomePage.css';
 
 // Image assets - using local paths from /public/images
 
+const translations = {
+  en: {
+    heroTitle: 'From Fallen Leaves to Fresh Plates',
+    heroDescription: (
+      <>
+        Por Jai Dee transforms fallen leaves into compost,<br aria-hidden="true" />
+        restores the soil, reduces PM2.5,<br aria-hidden="true" />
+        and opens our farm as a living classroom.
+      </>
+    ),
+    sectionTitle: 'Farming, Training, Sustainability',
+    supportedBy: 'Supported By',
+    aboutUs: 'About us',
+    ctaTitle: 'Call to action',
+    newsUpdate: 'news updates'
+  },
+  th: {
+    heroTitle: 'จากใบไม้ร่วงสู่จานอาหารสดใหม่',
+    heroDescription: (
+      <>
+        พอใจดีนำใบไม้ร่วงมาแปรรูปเป็นปุ๋ยอินทรีย์ฟื้นฟูดิน<br aria-hidden="true" />
+        ลดปัญหา PM2.5และเปิดฟาร์มให้เป็นห้องเรียนมีชีวิต<br aria-hidden="true" />
+        สำหรับการเรียนรู้
+      </>
+    ),
+    sectionTitle: 'เกษตรกรรม · การฝึกอบรม · ความยั่งยืน',
+    supportedBy: 'สนับสนุนโดย',
+    aboutUs: 'เกี่ยวกับเรา',
+    ctaTitle: 'ร่วมลงมือทำ',
+    newsUpdate: 'ข่าวสารล่าสุด'
+  }
+};
+
 export default function HomePage() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  
   return (
     <div className="home-page" data-name="Home Page" data-node-id="6:4">
       <Navbar />
       
       <p className="hero-title" data-node-id="8:10">
-        From Fallen Leaves to Fresh Plates
+        {t.heroTitle}
       </p>
       
       <p className="hero-description" data-node-id="8:39">
-        Por Jai Dee transforms fallen leaves into compost,<br aria-hidden="true" />
-        restores the soil, reduces PM2.5,<br aria-hidden="true" />
-        and opens our farm as a living classroom.
+        {t.heroDescription}
       </p>
       
       <div className="hero-image-bg" data-node-id="8:40" />
@@ -28,7 +63,7 @@ export default function HomePage() {
       </div>
       
       <p className="section-title" data-node-id="8:46">
-        Farming, Training, Sustainability
+        {t.sectionTitle}
       </p>
       
       <div className="project-card project-1" data-name="Example Project 1" data-node-id="8:60">
@@ -59,7 +94,7 @@ export default function HomePage() {
       </div>
       
       <p className="supported-title" data-node-id="20:185">
-        Supported By
+        {t.supportedBy}
       </p>
       <div className="supported-bar" data-node-id="20:184" />
       
@@ -80,20 +115,20 @@ export default function HomePage() {
         <div className="about-button" data-node-id="30:116">
           <div className="about-button-bg" data-node-id="20:191" />
           <p className="about-button-text" data-node-id="20:190">
-            About us
+            {t.aboutUs}
           </p>
         </div>
       </Link>
       
       <p className="cta-title" data-node-id="8:47">
-        Call to action
+        {t.ctaTitle}
       </p>
       
       <Link to="/blog" className="blog-button-link">
         <div className="blog-button" data-name="Blog Button" data-node-id="13:138">
           <div className="blog-button-bg" data-node-id="13:135" />
           <p className="blog-button-text" data-node-id="13:137">
-            news updates
+            {t.newsUpdate}
           </p>
         </div>
       </Link>
